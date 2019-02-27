@@ -11,3 +11,5 @@ RUN apt-get update -y &&\
     apt-add-repository -y ppa:ansible/ansible &&\
     apt-get update -y &&\
     apt-get install -y ansible
+
+RUN apt-get install -y webhook

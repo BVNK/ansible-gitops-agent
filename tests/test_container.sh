@@ -17,3 +17,7 @@
 @test "we have ansible" {
     which ansible
 }
+
+@test "we have webhook" {
+    which webhook
+}
