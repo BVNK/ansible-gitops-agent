@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Not yet implemented!"
-exit -1
-#docker build -t philipstaffordwood/kubular-ansible-agent:latest
+export IMAGE_NAME="philipstaffordwood/kubular-ansible-agent:latest"
+docker build . -t $IMAGE_NAME
+docker push $IMAGE_NAME
