@@ -11,3 +11,9 @@
 @test "we have git" {
     which git
 }
+
+
+
+@test "we have ansible" {
+    which ansible
+}
