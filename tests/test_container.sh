@@ -7,3 +7,7 @@
   #false
   true
 }
+
+@test "we have git" {
+    which git
+}

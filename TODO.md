@@ -1,5 +1,5 @@
 # TODO
 - [X] Add testing and building scaffolding
-- [ ] Add Git
+- [X] Add Git
 - [ ] Add Ansible
 - [ ] Get webhook server
