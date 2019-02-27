@@ -8,8 +8,8 @@
 # Should be run from base of repo:
 # i.e. ./scripts/live-test.sh
 
-  echo watching 'test.sh and tests/test_container.sh' and running './test.sh'
-  inotifywait -q -m -e close_write ./test.sh ./tests/test_container.sh |
+  echo watching 'test.sh, tests/test_container.bats and tests/test_webhooks' and running './test.sh'
+  inotifywait -q -m -e close_write ./test.sh ./tests/test_container.bats ./tests/test_webhook.bats |
   while read -r filename event; do
     ./test.sh     
   done

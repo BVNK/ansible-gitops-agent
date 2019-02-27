@@ -3,3 +3,5 @@
 - [X] Add Git
 - [X] Add Ansible
 - [X] Get webhook server
+
+- [X] Check that webhook can be configured and called
