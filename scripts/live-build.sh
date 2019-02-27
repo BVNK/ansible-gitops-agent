@@ -6,7 +6,7 @@
 
 # Requires inotifywait to be installed
 # Should be run from base of repo:
-# i.e. ./scripts/livebuild.sh
+# i.e. ./scripts/live-build.sh
 
   echo watching 'Dockerfile' and running './build.sh && ./test.sh'
   inotifywait -q -m -e close_write ./Dockerfile |

@@ -12,8 +12,9 @@ docker run \
     -v `pwd`:/src \
     -e TERM=$TERM \
     $IMAGE_NAME \
-    /src/tests/test_container.sh  
+    bats -p src/tests/test_container.sh  
 echo "STATUS CODE: $?"
+
 echo
 echo "**************************************"
 echo 
