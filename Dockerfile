@@ -15,3 +15,5 @@ RUN apt-get update -y &&\
 RUN apt-get install -y webhook
 
 RUN apt-get install -y iproute2
+
+EXPOSE 9000

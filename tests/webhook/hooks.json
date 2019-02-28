@@ -1,7 +1,7 @@
 [
     {
       "id": "hello-webhook",
-      "execute-command": "/bin/bash -c 'echo hello'",
-      "command-working-directory": "/root"
+      "execute-command": "/src/tests/webhook/hello.sh",
+      "command-working-directory": "/src"
     }
-  ]
+]

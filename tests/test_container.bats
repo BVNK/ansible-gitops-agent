@@ -13,7 +13,6 @@
 }
 
 
-
 @test "we have ansible" {
     which ansible
 }
