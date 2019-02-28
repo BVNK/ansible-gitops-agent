@@ -13,3 +13,5 @@ RUN apt-get update -y &&\
     apt-get install -y ansible
 
 RUN apt-get install -y webhook
+
+RUN apt-get install -y iproute2

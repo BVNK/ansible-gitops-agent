@@ -14,12 +14,16 @@ docker run \
     $IMAGE_NAME \
     bats -p src/tests/test_container.bats
 echo "STATUS CODE: $?"
-docker run \
+PWD=`pwd`
+CID=`docker run \
+    -d \
     --rm \
-    -v `pwd`:/src \
+    -v $PWD:/src \
     -e TERM=$TERM \
     $IMAGE_NAME \
-    bash -c 'webhook -verbose -hooks=/src/tests/webhook/hooks.json -hotreload && bats -p src/tests/test_container.bats ' 
+    webhook -verbose -hooks=/src/tests/webhook/hooks.json -hotreload `
+docker exec $CID bats -p src/tests/test_webhook.bats
+docker rm -f $CID
 echo "STATUS CODE: $?"
 echo
 echo "**************************************"
